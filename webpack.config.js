@@ -14,10 +14,10 @@ module.exports = {
     contentBase: './dist'
   },
   plugins: [
-    new UglifyJsPlugin({ sourceMap: true }),
+    new UglifyJsPlugin(), 
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Ping Pong',
+      title: 'Pig Dice',
       template: './src/index.html',
       inject: 'body'
     })
